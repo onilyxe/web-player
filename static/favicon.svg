@@ -1,0 +1,5 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <ns0:rect width="64" height="64" rx="9.0" fill="#111827" />
+  <ns0:circle cx="32" cy="32" r="22" fill="#1F2937" />
+  <ns0:path d="M26 21.5V42.5L43 32L26 21.5Z" fill="#FFFFFF" />
+</ns0:svg>

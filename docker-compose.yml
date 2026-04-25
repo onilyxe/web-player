@@ -1,0 +1,18 @@
+services:
+  web-player:
+    image: web-player:latest
+    pull_policy: never
+    container_name: web-player
+    restart: unless-stopped
+    volumes:
+      - /your/music/directory:/music:ro # Шлях до локальної бібліотеки
+    environment:
+      ADMIN_PASSWORD: # Пароль для локальної бібліотеки / > openssl rand -base64 24
+      JWT_SECRET: # Секрет для підпису токенів / > openssl rand -hex 32
+      TOKEN_HOURS: "24"
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
